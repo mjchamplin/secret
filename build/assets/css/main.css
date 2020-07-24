@@ -1,0 +1,22 @@
+@import "reset.css";
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  color: #fff;
+  font-family: "", sans-serif;
+  font-size: 14px;
+}
+@media screen and (min-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
