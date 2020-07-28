@@ -1,22 +1,124 @@
-@import "reset.css";
+@import url(reset.css);
 html {
   -webkit-font-smoothing: antialiased;
-}
+  font-size: 16px; }
+  @media screen and (min-width: 600px) {
+    html {
+      font-size: 16px; } }
+  @media screen and (min-width: 1024px) {
+    html {
+      font-size: 18px; } }
 
 body {
+  background-color: #f5f5f5;
+  color: #111111;
+  font-family: freight-display-pro, serif;
+  font-weight: 500; }
+
+p {
+  max-width: 600px;
+  font-size: 22px;
+  line-height: 1.5; }
+  @media screen and (min-width: 600px) {
+    p {
+      font-size: 26px; } }
+  @media screen and (min-width: 1024px) {
+    p {
+      font-size: 32px; } }
+  p a {
+    color: #111111;
+    transition: color 0.2s; }
+  p a:hover {
+    color: #84b082; }
+
+section h1 {
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: normal;
+  letter-spacing: -0.03em; }
+
+section {
+  margin-top: 3rem; }
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px; }
+  @media screen and (min-width: 600px) {
+    .container {
+      padding: 80px 32px 0; } }
+  @media screen and (min-width: 1024px) {
+    .container {
+      padding: 160px 64px 0; } }
+
+.oval, .oval-overlay {
+  width: 96px;
+  height: 96px;
+  border-radius: 100%; }
+  @media screen and (min-width: 376px) {
+    .oval, .oval-overlay {
+      width: 144px;
+      height: 144px; } }
+
+.oval {
+  background-image: url("https://placekitten.com/g/600/600");
+  background-size: contain;
+  margin: 0 auto 48px; }
+  @media screen and (min-width: 376px) {
+    .oval {
+      margin: 0 0 48px; } }
+
+.oval-overlay {
+  background-color: none;
+  transition: background 0.3s; }
+
+.oval-overlay:hover {
+  background-color: #F6B38A; }
+
+.social-links {
+  margin: 0 auto;
+  text-align: center; }
+  @media screen and (min-width: 376px) {
+    .social-links {
+      margin: 0;
+      text-align: left; } }
+
+ion-icon {
+  font-size: 24px;
+  color: #111;
+  padding: 8px;
+  transition: color 0.15s, background 0.3s;
+  border-radius: 100%; }
+  @media screen and (min-width: 600px) {
+    ion-icon {
+      font-size: 28px; } }
+  @media screen and (min-width: 1024px) {
+    ion-icon {
+      font-size: 32px; } }
+
+ion-icon:hover {
   color: #fff;
-  font-family: "", sans-serif;
-  font-size: 14px;
-}
-@media screen and (min-width: 600px) {
-  body {
-    font-size: 16px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  body {
-    font-size: 18px;
-  }
-}
+  background-color: #F6B38A; }
+
+strong {
+  font-weight: 900; }
+
+.modernist {
+  color: #AA4B39;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 900; }
+
+.literature {
+  font-family: freight-display-pro, serif;
+  color: #111111;
+  font-style: italic;
+  border-bottom: 2px solid #ccc; }
+
+.whatever {
+  color: #AA4B39;
+  text-transform: uppercase;
+  font-weight: bold; }
 
 /*# sourceMappingURL=main.css.map */

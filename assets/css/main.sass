@@ -3,19 +3,119 @@
 // color variables
 $white: #ffffff
 $black: #111111
+$red: #AA4B39
+$green: #84b082
 
 // font variables
-$lust: '', serif
-$acumin: '', sans-serif
+$serif: freight-display-pro, serif
+$sans-serif: Helvetica Neue, Helvetica, Arial, sans-serif
 
 html
   -webkit-font-smoothing: antialiased
-
-body
-  color: #fff
-  font-family: $acumin
-  font-size: 14px
+  font-size: 16px
   @media screen and (min-width: 600px)
     font-size: 16px
   @media screen and (min-width: 1024px)
     font-size: 18px
+
+body
+  background-color: #f5f5f5
+  color: $black
+  font-family: $serif
+  font-weight: 500
+
+p
+  max-width: 600px
+  font-size: 22px
+  line-height: 1.5
+  @media screen and (min-width: 600px)
+    font-size: 26px
+  @media screen and (min-width: 1024px)
+    font-size: 32px
+  a
+    color: $black
+    transition: color .2s
+  a:hover
+    color: $green
+
+section h1
+  font-size: 4rem
+  font-style: italic
+  font-weight: normal
+  letter-spacing: -.03em
+
+section
+  margin-top: 3rem
+
+.container
+  width: 100%
+  max-width: 1200px
+  margin: 0 auto
+  padding: 32px
+  @media screen and (min-width: 600px)
+    padding: 80px 32px 0
+  @media screen and (min-width: 1024px)
+    padding: 160px 64px 0
+
+.oval, .oval-overlay
+  width: 96px
+  height: 96px
+  border-radius: 100%
+  @media screen and (min-width: 376px)
+    width: 144px
+    height: 144px
+.oval
+  background-image: url('https://placekitten.com/g/600/600')
+  background-size: contain
+  margin: 0 auto 48px
+  @media screen and (min-width: 376px)
+    margin: 0 0 48px
+
+.oval-overlay
+  background-color: none
+  transition: background .3s
+.oval-overlay:hover
+  background-color: #F6B38A
+
+.social-links
+  margin: 0 auto
+  text-align: center
+  @media screen and (min-width: 376px)
+    margin: 0
+    text-align: left
+
+ion-icon
+  font-size: 24px
+  color: #111
+  padding: 8px
+  transition: color .15s, background .3s
+  border-radius: 100%
+  @media screen and (min-width: 600px)
+    font-size: 28px
+  @media screen and (min-width: 1024px)
+    font-size: 32px
+ion-icon:hover
+  color: #fff
+  background-color: #F6B38A
+
+// typography
+
+strong
+  font-weight: 900
+
+.modernist
+  color: $red
+  font-family: $sans-serif
+  text-transform: uppercase
+  font-weight: 900
+
+.literature
+  font-family: $serif
+  color: $black
+  font-style: italic
+  border-bottom: 2px solid #ccc
+
+.whatever
+  color: $red
+  text-transform: uppercase
+  font-weight: bold
