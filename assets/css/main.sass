@@ -66,11 +66,13 @@ section
     height: 144px
 .oval
   //background-color: #F6B38A
-  background-image: url('https://placekitten.com/g/600/600')
-  background-size: contain
-  margin: 0 auto 48px
-  @media screen and (min-width: 376px)
-    margin: 0 0 48px
+  background-image: url('../img/chicken.jpg')
+  background-position: center
+  background-size: 144px 144px
+  margin: 0 0 48px
+  transition: background 2s
+.oval:hover
+  background-size: 160px 160px
 
 .oval-overlay
   background-color: #F6B38A
