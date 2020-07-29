@@ -15,7 +15,7 @@ module.exports = function(grunt) {
           //outputStyle: 'compact'
         },
         files: {
-          'build/assets/css/main.css': 'assets/css/main.sass',
+          'docs/assets/css/main.css': 'assets/css/main.sass',
           'assets/css/reset.css': 'assets/css/reset.sass'
         }
       }
@@ -34,7 +34,7 @@ module.exports = function(grunt) {
             cwd: 'assets/img/',
             src: ['**/*.jpg'],
             // Could also match cwd. i.e. project-directory/img/
-            dest: 'build/assets/img/',
+            dest: 'docs/assets/img/',
             ext: '.jpg'
           }
         ]
@@ -43,7 +43,7 @@ module.exports = function(grunt) {
 
     clean: {
       build: {
-        src: [ 'build' ]
+        src: [ 'docs' ]
       },
     },
 
@@ -51,19 +51,19 @@ module.exports = function(grunt) {
       build: {
         cwd: '.',
         src: ['**/*.html', '!**/node_modules/**'],
-        dest: 'build',
+        dest: 'docs',
         expand: true
       },
       resets: {
         cwd: 'assets/css/',
         src: ['reset.css'],
-        dest: 'build/assets/css',
+        dest: 'docs/assets/css',
         expand: true
       },
       pdfs: {
         cwd: 'assets/pdf/',
         src: ['**/*.pdf'],
-        dest: 'build/assets/pdf',
+        dest: 'docs/assets/pdf',
         expand: true
       }
     },
@@ -71,7 +71,7 @@ module.exports = function(grunt) {
     uglify: {
       build: {
         files: {
-          'build/assets/js/functions.js': ['assets/js/functions.js']
+          'docs/assets/js/functions.js': ['assets/js/functions.js']
         }
       }
     },
@@ -80,7 +80,7 @@ module.exports = function(grunt) {
     sftp: {
       deploy: {
         files: {
-          "./": "build/**"
+          "./": "docs/**"
         },
         options: {
           path: 'public_html/',
@@ -88,7 +88,7 @@ module.exports = function(grunt) {
           username: '<%= secret.username %>',
           password: '<%= secret.password %>',
           showProgress: true,
-          srcBasePath: "build/",
+          srcBasePath: "docs/",
           destBasePath: "public_html/",
           //createDirectories: true
         }
@@ -96,7 +96,7 @@ module.exports = function(grunt) {
     },
     sshexec: {
       deploy: {
-        command: 'cd public_html/app && git pull && rsync -avzh build/ ../',
+        command: 'cd public_html/app && git pull && rsync -avzh docs/ ../',
         options: {
           host: '<%= secret.host %>',
           username: '<%= secret.username %>',
