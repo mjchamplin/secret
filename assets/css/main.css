@@ -18,13 +18,7 @@ body {
 p {
   max-width: 600px;
   font-size: 22px;
-  line-height: 1.5; }
-  @media screen and (min-width: 600px) {
-    p {
-      font-size: 26px; } }
-  @media screen and (min-width: 1024px) {
-    p {
-      font-size: 32px; } }
+  line-height: 1.6; }
   p a {
     color: #111111;
     transition: color 0.2s; }
@@ -92,12 +86,6 @@ ion-icon {
   padding: 8px;
   transition: color 0.15s, background 0.3s;
   border-radius: 100%; }
-  @media screen and (min-width: 600px) {
-    ion-icon {
-      font-size: 28px; } }
-  @media screen and (min-width: 1024px) {
-    ion-icon {
-      font-size: 32px; } }
 
 ion-icon:hover {
   color: #fff;
