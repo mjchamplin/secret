@@ -1,14 +1,3 @@
-# Starting point for basic html projects
+# Personal Landing Page
 
-Intended to speed up development time for static sites and landing pages. 
-
-Included: _Grunt.js_ with the following packages: 
-- clean
-- Copy
-- Imagemin
-- Sass
-- Uglify
-- Watch
-- SSH
-
-Also includes the HTML 5 Reset & Jquery.
+It links to my other presences online. Currently live @ <a href="http://champl.in">champl.in</a>.
