@@ -94,21 +94,4 @@ ion-icon:hover {
 strong {
   font-weight: 900; }
 
-.modernist {
-  color: #AA4B39;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 900; }
-
-.literature {
-  font-family: freight-display-pro, serif;
-  color: #111111;
-  font-style: italic;
-  border-bottom: 2px solid #ccc; }
-
-.whatever {
-  color: #AA4B39;
-  text-transform: uppercase;
-  font-weight: bold; }
-
 /*# sourceMappingURL=main.css.map */
