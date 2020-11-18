@@ -10,7 +10,7 @@ module.exports = function(grunt) {
           'assets/css/reset.css': 'assets/css/reset.sass'
         }
       },
-      build: {
+      rebuild: {
         options: {
           //outputStyle: 'compact'
         },
@@ -42,13 +42,13 @@ module.exports = function(grunt) {
     },
 
     clean: {
-      build: {
+      rebuild: {
         src: [ 'docs' ]
       },
     },
 
     copy: {
-      build: {
+      rebuild: {
         cwd: '.',
         src: ['**/*.html', '!**/node_modules/**'],
         dest: 'docs',
@@ -69,7 +69,7 @@ module.exports = function(grunt) {
     },
 
     uglify: {
-      build: {
+      rebuild: {
         files: {
           'docs/assets/js/functions.js': ['assets/js/functions.js']
         }
@@ -121,7 +121,7 @@ module.exports = function(grunt) {
 
 
   grunt.registerTask('default', ['sass:dist']);
-  grunt.registerTask('build', ['clean', 'copy', 'sass:build','imagemin', 'uglify']);
+  grunt.registerTask('rebuild', ['clean', 'copy', 'sass:rebuild','imagemin', 'uglify']);
   grunt.registerTask('deploy', ['sshexec']);
   grunt.registerTask('ssh', ['sshexec']);
 };
