@@ -65,6 +65,12 @@ module.exports = function(grunt) {
         src: ['**/*.pdf'],
         dest: 'docs/assets/pdf',
         expand: true
+      },
+      icons: {
+        cwd: 'assets/icons/',
+        src: ['**/*.png', '**/*.ico', '**/*.webmanifest'],
+        dest: 'docs/assets/icons',
+        expand: true
       }
     },
 
