@@ -9,10 +9,9 @@
     "grunt-contrib-sass": "^2.0.0",
     "grunt-contrib-uglify": "^5.0.0",
     "grunt-contrib-watch": "^1.1.0",
-    "grunt-ssh": "^0.12.9"
-  },
-  "dependencies": {
     "grunt-sass": "^2.1.0",
-    "node-sass": "^4.7.2"
-  }
+    "grunt-ssh": "^0.12.9",
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {}
 }

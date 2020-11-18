@@ -21,7 +21,7 @@ p {
   line-height: 1.6; }
   p a {
     color: #111111;
-    transition: color 0.2s; }
+    transition: color .2s; }
   p a:hover {
     color: #84b082; }
 
@@ -29,7 +29,7 @@ section h1 {
   font-size: 4rem;
   font-style: italic;
   font-weight: normal;
-  letter-spacing: -0.03em; }
+  letter-spacing: -.03em; }
 
 section {
   margin-top: 3rem; }
@@ -67,7 +67,7 @@ section {
 
 .oval-overlay {
   background-color: #F6B38A;
-  transition: background 0.3s; }
+  transition: background .3s; }
 
 .oval-overlay:hover {
   background-color: rgba(255, 255, 255, 0); }
@@ -84,7 +84,7 @@ ion-icon {
   font-size: 24px;
   color: #111;
   padding: 8px;
-  transition: color 0.15s, background 0.3s;
+  transition: color .15s, background .3s;
   border-radius: 100%; }
 
 ion-icon:hover {
@@ -93,5 +93,3 @@ ion-icon:hover {
 
 strong {
   font-weight: 900; }
-
-/*# sourceMappingURL=main.css.map */
