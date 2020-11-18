@@ -76,7 +76,6 @@ module.exports = function(grunt) {
       }
     },
 
-    secret: grunt.file.readJSON('secret.json'),
     sftp: {
       deploy: {
         files: {
