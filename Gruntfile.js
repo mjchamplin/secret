@@ -7,21 +7,15 @@ module.exports = function(grunt) {
        implementation: sass
       },
       dist: {                            // Target
-        options: {                       // Target options
-          // outputStyle: 'expanded'
-        },
         files: {                         // Dictionary of files
-          'assets/css/main.css': 'assets/css/main.sass',       // 'destination': 'source'
-          'assets/css/reset.css': 'assets/css/reset.sass'
+          'assets/css/main.css': 'includes/css/main.sass',       // 'destination': 'source'
+          'assets/css/reset.css': 'includes/css/reset.sass'
         }
       },
       build: {
-        options: {
-          //outputStyle: 'compact'
-        },
         files: {
-          'docs/assets/css/main.css': 'assets/css/main.sass',
-          'assets/css/reset.css': 'assets/css/reset.sass'
+          'assets/css/main.css': 'includes/css/main.sass',   // 'destination': 'source'
+          'assets/css/reset.css': 'includes/css/reset.sass'
         }
       }
     },
@@ -36,10 +30,10 @@ module.exports = function(grunt) {
             // Set to true to enable the following options…
             expand: true,
             // cwd is 'current working directory'
-            cwd: 'assets/img/',
+            cwd: 'includes/img/',
             src: ['**/*.jpg'],
             // Could also match cwd. i.e. project-directory/img/
-            dest: 'docs/assets/img/',
+            dest: 'assets/img/',
             ext: '.jpg'
           }
         ]
@@ -48,33 +42,27 @@ module.exports = function(grunt) {
 
     clean: {
       build: {
-        src: [ 'docs' ]
+        src: [ 'assets' ]
       },
     },
 
     copy: {
-      build: {
-        cwd: '.',
-        src: ['**/*.html', '!**/node_modules/**'],
-        dest: 'docs',
-        expand: true
-      },
       resets: {
-        cwd: 'assets/css/',
+        cwd: 'includes/css/',
         src: ['reset.css'],
-        dest: 'docs/assets/css',
+        dest: 'assets/css',
         expand: true
       },
       pdfs: {
-        cwd: 'assets/pdf/',
+        cwd: 'includes/pdf/',
         src: ['**/*.pdf'],
-        dest: 'docs/assets/pdf',
+        dest: 'assets/pdf',
         expand: true
       },
       icons: {
-        cwd: 'assets/icons/',
+        cwd: 'includes/icons/',
         src: ['**/*.png', '**/*.ico', '**/*.webmanifest'],
-        dest: 'docs/assets/icons',
+        dest: 'assets/icons',
         expand: true
       }
     },
@@ -82,13 +70,13 @@ module.exports = function(grunt) {
     uglify: {
       build: {
         files: {
-          'docs/assets/js/functions.js': ['assets/js/functions.js']
+          'assets/js/functions.js': ['includes/js/functions.js']
         }
       }
     },
 
     watch: {
-      files: ['assets/css/*.sass'],
+      files: ['includes/css/*.sass'],
       tasks: ['sass']
     }
   });
