@@ -1,6 +1,11 @@
+const sass = require('sass');
+
 module.exports = function(grunt) {
   grunt.initConfig({
     sass: {                              // Task
+      options: {
+       implementation: sass
+      },
       dist: {                            // Target
         options: {                       // Target options
           // outputStyle: 'expanded'

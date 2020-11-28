@@ -13,19 +13,17 @@
       <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
       <link rel="manifest" href="/assets/icons/site.webmanifest">
 
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Q6R5Q8862"></script>
       <script>
-          (function(h,o,t,j,a,r){
-              h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-              h._hjSettings={hjid:2098217,hjsv:6};
-              a=o.getElementsByTagName('head')[0];
-              r=o.createElement('script');r.async=1;
-              r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-              a.appendChild(r);
-          })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-      </script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
+        gtag('config', 'G-7Q6R5Q8862');
+      </script>
+      
       <style type="text/css">
-        /* Style Settings */
         @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
         :root {
             --bgColor:#1C1C1C;
@@ -85,10 +83,12 @@
   </head>
 
   <body>
-    <img id="userPhoto" src="https://media.giphy.com/media/1X7gN6XKLLKcfQR79i/source.gif" alt="User Photo">
+    <a href="/">
+      <img id="userPhoto" src="https://media.giphy.com/media/1X7gN6XKLLKcfQR79i/source.gif" alt="User Photo">
+    </a>
     <a href="https://www.twitter.com/mjchamplin" id="userName" target="_blank">@mjchamplin</a>
     <div id="links">
-      <a class="link" href="http://champl.in" target="_blank">Design Portfolio</a>
+      <a class="link" href="http://mjchamplin.com" target="_blank">Design Portfolio</a>
       <a class="link" href="http://photo.mjchamplin.com" target="_blank">Photography Portfolio</a>
       <a class="link" href="https://instagram.com/mjchamplin" target="_blank">Instagram (Personal)</a>
       <a class="link" href="https://instagram.com/michaeljchamplin" target="_blank">Instagram (Fine Art)</a>
