@@ -6,12 +6,9 @@
     "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-imagemin": "*",
-    "grunt-contrib-sass": "^2.0.0",
     "grunt-contrib-uglify": "^5.0.0",
     "grunt-contrib-watch": "^1.1.0",
-    "grunt-sass": "^2.1.0",
-    "grunt-ssh": "^0.12.9",
-    "node-sass": "^4.14.1"
-  },
-  "dependencies": {}
+    "grunt-sass": "^3.1.0",
+    "sass": "^1.29.0"
+  }
 }

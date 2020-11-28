@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAKA,CAAC;EACC,UAAU,EAAE,UAAU;EACtB,cAAc,EAAE,kBAAkB;EAClC,sBAAsB,EAAE,WAAW;EACnC,uBAAuB,EAAE,SAAS;EAClC,YAAY,EAAE,IAAI;;AAEpB,IAAI;EACF,WAAW,EAAE,UAAU;EACvB,wBAAwB,EAAE,IAAI;;AAEhC,IAAI;EACF,MAAM,EAAE,CAAC",
-"sources": ["reset.sass"],
-"names": [],
-"file": "reset.css"
-}

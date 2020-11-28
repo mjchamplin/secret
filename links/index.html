@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <title>Michael Champlin</title>
+
+      <!-- Favicons -->
+      <link rel="shortcut icon" href="">
+      <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+      <link rel="manifest" href="/assets/icons/site.webmanifest">
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Q6R5Q8862"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7Q6R5Q8862');
+      </script>
+
+      <style type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+        :root {
+            --bgColor:#1C1C1C;
+            --accentColor: #E6E6E6;
+            --font: 'Karla', sans-serif;
+        }
+
+        body{
+            background-color: var(--bgColor);
+        }
+
+        #userPhoto{
+            width: 110px;
+            height: 110px;
+            display: block;
+            margin: 35px auto 20px;
+            border-radius: 50%;
+        }
+
+        #userName{
+            color: #bbb;
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1.25;
+            display: block;
+            font-family: var(--font);
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        #links{
+            max-width: 675px;
+            width: auto;
+            display: block;
+            margin: 27px auto;
+        }
+        .link{
+            display: block;
+            background-color: var(--accentColor);
+            color: var(--bgColor);
+            font-family: var(--font);
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 17px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: all .25s cubic-bezier(.08,.59,.29,.99);
+            border: solid var(--accentColor) 2px;
+        }
+
+        .link:hover{
+            background-color: var(--bgColor);
+            color: var(--accentColor);
+        }
+      </style>
+  </head>
+
+  <body>
+    <a href="/">
+      <img id="userPhoto" src="https://media.giphy.com/media/1X7gN6XKLLKcfQR79i/source.gif" alt="Animated gif of colorful boxes">
+    </a>
+    <a href="https://www.twitter.com/mjchamplin" id="userName" target="_blank">@mjchamplin</a>
+    <div id="links">
+      <a class="link" href="http://mjchamplin.com" target="_blank">Design Portfolio</a>
+      <a class="link" href="http://photo.mjchamplin.com" target="_blank">Photography Portfolio</a>
+      <a class="link" href="https://instagram.com/mjchamplin" target="_blank">Instagram (Personal)</a>
+      <a class="link" href="https://instagram.com/michaeljchamplin" target="_blank">Instagram (Fine Art)</a>
+    </div>
+  </body>
+</html>
